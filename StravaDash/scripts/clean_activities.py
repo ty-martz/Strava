@@ -20,6 +20,14 @@ def preprocess_data(df):
 
     return df
 
-d = preprocess_data(data)
+def col_val_counts(df, col):
+    return df[col].value_counts()
 
-print(len(d))
+def jsonify_counts(df):
+    js = df.to_json(orient='index')
+    return js
+
+#if __name__ == '__main__':
+#    d = preprocess_data(data)
+#    active_counts_table = col_val_counts(d, 'activity_type')
+#    print('json =', jsonify_counts(active_counts_table))
