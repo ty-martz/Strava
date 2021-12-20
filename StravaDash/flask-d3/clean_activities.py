@@ -1,8 +1,4 @@
 import pandas as pd
-#import os
-#print(os.getcwd())
-
-data = pd.read_csv('StravaDash/data/activities.csv')
 
 def preprocess_data(df):
     df = df[['Activity ID', 'Activity Date', 'Activity Name', 'Activity Type', 'Elapsed Time',
@@ -24,10 +20,12 @@ def col_val_counts(df, col):
     return df[col].value_counts()
 
 def jsonify_counts(df):
-    js = df.to_json(orient='index')
+    js = df.to_json()
     return js
 
-#if __name__ == '__main__':
-#    d = preprocess_data(data)
-#    active_counts_table = col_val_counts(d, 'activity_type')
-#    print('json =', jsonify_counts(active_counts_table))
+if __name__ == '__main__':
+    data = pd.read_csv('StravaDash/data/activities.csv')
+    d = preprocess_data(data)
+    active_counts_table = col_val_counts(d, 'activity_type')
+    print(active_counts_table)
+    print('json =', jsonify_counts(active_counts_table))
