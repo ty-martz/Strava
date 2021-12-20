@@ -3,7 +3,7 @@
 <script src="https://d3js.org/d3.v3.min.js"></script>
 
 <head>
-    <h1 align="center"><u>Strava Dashboard</u></h1>
+    <h1>Strava Dashboard</h1>
                       
     <link rel="stylesheet" href="../css/style.css">                    
                                                 
@@ -26,7 +26,8 @@
             .append('g')
             .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-        var graphData = {{json_data | safe }}
+        var graphData = {{ data | safe }}
+        console.log(graphData)
 
     </script>
 
