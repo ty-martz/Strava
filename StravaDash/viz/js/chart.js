@@ -3,9 +3,9 @@
 
 
 //set margin and sizes
-var margin = {top:10, bottom:75, right:30, left:30};
-var w = 600 - margin.left - margin.right;
-var h = 400 - margin.top - margin.bottom;
+var margin = {top:75, bottom:75, right:30, left:75};
+var w = 750 - margin.left - margin.right;
+var h = 500 - margin.top - margin.bottom;
 
 //append svg
 var svg = d3.select('#activity_bar')
@@ -81,5 +81,30 @@ d3.csv('active_cnt2.csv', function(data) {
         .attr("y", function(d) { return y(d.activity_count); })
         .attr("height", function(d) { return h - y(d.activity_count); })
         .delay(function(d,i){console.log(i) ; return(i*100)})
+    
+    // Axis Titles
+    svg.append("text")
+        .attr("class", "x-label")
+        .attr("text-anchor", "middle")
+        .attr("x", w/2)
+        .attr("y", h+margin.bottom/1.5)
+        .text("Activity");
+
+    svg.append("text")
+        .attr("class", "y-label")
+        //.attr("text-anchor", "middle")
+        .attr("x", -h/2)
+        .attr("dy", -margin.left/2)
+        //.attr('transform', 'translate(' + -50 + ', ' + h/2 + ')')
+        .attr("transform", "rotate(-90)")
+        .text("Count");
+
+    svg.append("text")
+        .attr("class", "chart-title")
+        .attr("text-anchor", "middle")
+        .attr("x", w/2)
+        .attr("y", -margin.top/2)
+        .text("Activity Counts")
+        .style('font-size', 24);
 
 });
