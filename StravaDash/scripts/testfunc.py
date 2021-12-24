@@ -30,6 +30,7 @@ if __name__ == '__main__':
     data = pd.read_csv('StravaDash/data/activities.csv')
     d = preprocess_data(data)
     active_counts_table = col_val_counts(d, 'activity_type')
+    active_counts_table.to_csv('StravaDash/aggData/active_cnt.csv')
     print(active_counts_table)
     json_data = jsonify_counts(active_counts_table)
     print('json =', json_data)
