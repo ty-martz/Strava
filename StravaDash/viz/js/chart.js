@@ -1,3 +1,6 @@
+// TO RUN SERVER:
+    // terminal python3 -m http.server
+
 
 //set margin and sizes
 var margin = {top:10, bottom:50, right:30, left:30};
@@ -14,10 +17,10 @@ var svg = d3.select('#activity_bar')
 
 //parse data with chart building within
 //d3.json('StravaDash/aggData/active_cnt.json', function(data) {
-d3.csv('active_cnt.csv', function(data) {
+d3.csv('active_cnt2.csv', function(data) {
 
     console.log(data)
-    console.log(24)
+    console.log(2)
 
     //Add axes
     var x = d3.scaleBand()
@@ -48,7 +51,7 @@ d3.csv('active_cnt.csv', function(data) {
             .attr("width", x.bandwidth())
             .attr("fill", "#69b3a2")
             // no bar at the beginning thus:
-            .attr("height", function(d) { return h - y(0); }) // always equal to 0
+            .attr("height", function(d) { return y(d.activity_count); }) // always equal to 0
             .attr("y", function(d) { return y(0); })
 
     // Animation
