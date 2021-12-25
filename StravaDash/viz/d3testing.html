@@ -1,16 +1,42 @@
 <!DOCTYPE html>
+<!-- to spin up simple server:
+        cd Code/Pets/Strava
+        source env/bin/activate
+        python3 -m http.server 
+        http://0.0.0.0:8000/ -->
 
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <script src="https://d3js.org/d3.v4.js"></script>
+    <style>
+        body {
+            background-color: lightyellow;
+        }
+        .main-title {
+            color: orange;
+            text-align: center;
+        }
+        #activity_bar {
+            border: 1px solid;
+            border-radius:10px;
+            border-color: orange;
+        }
+    </style>
 
-    <title>Simple Strava Visuals</title>
+    <title>Simple Strava Dashboard</title>
 
 </head>
 
 <body>
     <!-- your content here... -->
+    <h1 class="main-title">365 days of Strava Data</h1>
+    <strong class="sub-title">for Jackie Cohen</strong>
+    <br></br>
+    <p class="opening-message">Over the course of 2021, Jackie ran and ran and ran until she didn't want to ever stop again, building up from one mile to 10 to 13.1, to 20 and then 26.2. But she didn't stop there...</p>
+    <br></br>
+    <h3>Let's see a breakdown of all the activities completed this year:</h3>
+
     <div id='activity_bar'></div>
 
     <script type="text/javascript" src="js/chart.js"></script>
