@@ -1,0 +1,31 @@
+body {
+    background-color: lightyellow;
+}
+.main-title {
+    color: orange;
+    text-align: center;
+}
+.sub-title {
+    color: orange;
+    text-align: right;
+}
+#activity_bar {
+    border-top-color: orange;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-bottom-color: orange;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    width: 67%;
+    float: left;
+}
+#activity-bar-text {
+    margin-left: 68%;
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 30px;
+    border-color: orange;
+}
+.svg-activity-bar {
+    align-items: center;
+}

@@ -9,20 +9,7 @@
 <head>
     <meta charset="utf-8">
     <script src="https://d3js.org/d3.v4.js"></script>
-    <style>
-        body {
-            background-color: lightyellow;
-        }
-        .main-title {
-            color: orange;
-            text-align: center;
-        }
-        #activity_bar {
-            border: 1px solid;
-            border-radius:10px;
-            border-color: orange;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/header_bar.css">
 
     <title>Simple Strava Dashboard</title>
 
@@ -33,13 +20,30 @@
     <h1 class="main-title">365 days of Strava Data</h1>
     <strong class="sub-title">for Jackie Cohen</strong>
     <br></br>
-    <p class="opening-message">Over the course of 2021, Jackie ran and ran and ran until she didn't want to ever stop again, building up from one mile to 10 to 13.1, to 20 and then 26.2. But she didn't stop there...</p>
-    <br></br>
-    <h3>Let's see a breakdown of all the activities completed this year:</h3>
 
-    <div id='activity_bar'></div>
+    <div class='bar-container' style='width: 100%;'>
+        <div id='activity_bar'></div>
+        <div id='activity-bar-text'>
+            <p class="opening-message" style='height: 225px;'>Over the course of 2021, Jackie ran and ran and ran until she didn't want to ever stop again, building up from one mile to 10 to 13.1, to 20 and then 26.2. But she didn't stop there...</p>
+            <ul>
+                <li>Bethany put her through numerous workouts</li>
+                <li>she obtained over 50 lbs of weights, and continues to use them</li>
+                <li>Rode her semi-new bike</li>
+                <li>And even got her chakras aligned with yoga... twice</li>
+            </ul>
+            <h3>Just look at all the activities completed this year!</h3>
+        </div>
+    </div>
+    <hr>
 
     <script type="text/javascript" src="js/chart.js"></script>
+
+    <div>
+        <h3>Let's dive in even further</h3>
+    </div>
+    <div class='mileage-line'></div>
+
+
     <!-- your content here... -->
 </body>
 </html>

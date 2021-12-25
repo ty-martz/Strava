@@ -4,12 +4,13 @@
 
 //set margin and sizes
 var margin = {top:75, bottom:75, right:30, left:75};
-var w = 750 - margin.left - margin.right;
-var h = 500 - margin.top - margin.bottom;
+var w = 1000 - margin.left - margin.right;
+var h = 600 - margin.top - margin.bottom;
 
 //append svg
 var svg = d3.select('#activity_bar')
     .append('svg')
+    .attr('class', 'svg-activity-bar')
     .attr('width', w + margin.left + margin.right)
     .attr('height', h + margin.top + margin.bottom)
     .append('g')
