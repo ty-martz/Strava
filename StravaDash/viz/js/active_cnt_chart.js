@@ -4,7 +4,7 @@
 
 //set margin and sizes
 var margin = {top:75, bottom:75, right:30, left:75};
-var w = 1000 - margin.left - margin.right;
+var w = 800 - margin.left - margin.right;
 var h = 600 - margin.top - margin.bottom;
 
 //append svg
