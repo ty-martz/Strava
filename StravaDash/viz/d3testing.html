@@ -10,6 +10,7 @@
     <meta charset="utf-8">
     <script src="https://d3js.org/d3.v4.js"></script>
     <link rel="stylesheet" type="text/css" href="css/header_bar.css">
+    <link rel="stylesheet" type="text/css" href="css/stats_section.css">
 
     <title>Strava Dashboard</title>
 
@@ -48,36 +49,38 @@
         - Top hour to run with arc and sun moving across it
         - Time spent Running as % of minutes in the year
         - Total calories burned as # of pizzas-->
-    <div id='num-days-run-container'>
-        <div class='stat-value'></div>
-        <div id='calendar-to-fill'>
+    <div id='num-days-run-container' style='width: 100%;'>
+        <div class='stat-value'>
+            <p>Jackie Ran for: <strong>365 Days</strong></p> <!--TO DO: HARDCODED-->
+        </div>
+        <div class='calendar-to-fill stat-icon'>
             <img src="img/calendar_vector.png">
         </div>
     </div>
     <br>
     <div id='total-miles-run-container'>
         <div class='stat-value'></div>
-        <div id='track-icon'></div>
+        <div class='track-icon stat-icon'></div>
     </div>
     <br>
     <div id='total-elevation-container'>
         <div class='stat-value'></div>
-        <div id='mountain-stamps'></div>
+        <div class='mountain-stamps stat-icon'></div>
     </div>
     <br>
     <div id='top-run-hour-container'>
         <div class='stat-value'></div>
-        <div id='sun-arc'></div>
+        <div class='sun-arc stat-icon'></div>
     </div>
     <br>
     <div id='total-time-run-container'>
         <div class='stat-value'></div>
-        <div id='percent-of-year-number'></div>
+        <div class='percent-of-year-number stat-icon'></div>
     </div>
     <br>
     <div id='total-cals-burned-container'>
         <div class='stat-value'></div>
-        <div id='pizza-icon'></div>
+        <div class='pizza-icon stat-icon'></div>
     </div>
     <br>
 
