@@ -25,8 +25,8 @@ var tooltip = d3.select("body").append("div")
 //d3.json('StravaDash/aggData/active_cnt.json', function(data) {
 d3.csv('active_cnt2.csv', function(data) {
 
-    console.log(data)
-    console.log(2)
+    //console.log(data)
+    //console.log(2)
 
     //Add axes
     var x = d3.scaleBand()

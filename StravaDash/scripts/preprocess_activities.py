@@ -19,7 +19,7 @@ def preprocess_activities(df0):
     cols_to_keep = ['activity_id', 'date_time', 'activity_name', 'activity_type',
                 'time_sec', 'distance_km', 'max_heart_rate', 'max_speed',
                 'average_speed', 'elevation_gain', 'average_heart_rate',
-                'calories', 'date_time', 'hour_of_day', 'month_of_year',
+                'calories', 'hour_of_day', 'month_of_year',
                 'distance_miles', 'time_minutes', 'max_speed_mph', 'average_speed_mph',
                 'elevation_gain_ft']
     return df[cols_to_keep]
