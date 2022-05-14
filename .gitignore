@@ -1,4 +1,6 @@
-__pycache__
+flask-d3/__pycache__/
+flask2/web/__pycache__/
 DS_Store
 .DS_Store
 test_data/
+exploration/.ipynb_checkpoints/
