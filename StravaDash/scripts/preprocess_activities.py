@@ -69,7 +69,7 @@ def col_val_counts(df, col='activity_type'):
 
 
 if __name__ == '__main__':
-    data = pd.read_csv('StravaDash/data/activities.csv')
+    data = pd.read_csv('StravaDash/test_data/jackie/activities.csv')
     out = preprocess_activities(data)
     activities_dict = get_activity_dataframes(out)
     running_stats = get_run_stats(activities_dict['Run'])
