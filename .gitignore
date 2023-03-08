@@ -4,3 +4,4 @@ DS_Store
 .DS_Store
 test_data/
 exploration/.ipynb_checkpoints/
+env
