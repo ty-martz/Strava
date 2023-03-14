@@ -58,12 +58,17 @@ def get_token():
     return data
 
 
+def save_activities(activities):
+    with open('./user-analytics/data/activities.json', 'w') as output:
+        json.dump(activities, output)
+
+
 ## MAIN SCRIPTS ##
 
 load_dotenv()
 
-client_id = os.environ.get("CLIENT_ID")
-client_secret = os.environ.get("CLIENT_SECRET")
+client_id = os.environ.get("CLIENT_ID_2")
+client_secret = os.environ.get("CLIENT_SECRET_2")
 redirect_uri = 'http://localhost/'
 n_activities = 200
 
@@ -104,6 +109,8 @@ if len(response1.json()) == 2:
     print(response1.json())
     print('')
 print('-------------------------')
+
+save_activities(response1.json())
 
 if False:
     activity = response.json()[5]
