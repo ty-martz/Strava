@@ -1,0 +1,6 @@
+This app compares the performance of 2 Strava users given their activities sourced from the Stava API v3. 
+Taking this information, the data is filtered and presented in 3 graphs specifying the cumulative distance for a given activity,
+the count of the given activity, and the elevation gain for each of the users.
+This allows for straightforward comparison of the two.
+Please note that the graphs work best for the 3 main exercises: Run, Ride, Swim. Other activities that involve moving
+distances work well, but stationary things like a strength workout don't.
