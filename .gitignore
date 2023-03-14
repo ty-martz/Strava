@@ -5,3 +5,10 @@ DS_Store
 test_data/
 exploration/.ipynb_checkpoints/
 env
+.env
+strava_token.json
+strava_token1.json
+activities1.json
+activities.json
+
+*/.DS_Store
