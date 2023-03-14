@@ -12,3 +12,6 @@ activities1.json
 activities.json
 
 */.DS_Store
+
+# adding StravaDash folder to highlight the other project: user-analytics
+StravaDash
