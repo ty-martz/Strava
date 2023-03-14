@@ -6,7 +6,7 @@ This Dashboard uses data compiled from the Strava V3 API and compares two users 
 
 ## Usage
 
-1. ```bash
+```bash
 git clone https://github.com/ty-martz/Strava.git
 
 cd Strava
@@ -17,7 +17,7 @@ source env/bin/activate
 
 pip install -r requirements.txt
 ```
-This will provide the key files you need to make a comparison and then create an environment with the proper packages
+1. The above will provide the key files you need to make a comparison and then create an environment with the proper packages
 
 2. Collect your Strava Data and the person you want to compare to.
     - If you get an export from Strava: Save the activities.csv files as u1_activities.csv and u2_activities.csv in the `data` folder
