@@ -26,9 +26,9 @@ pip install -r requirements.txt
 3. To collect data from the API... COMING SOON
 
 4. Once the files are saved with the proper names in the data folder, you can run the dash app
-    - ```bash
-    python app.py
-    ```
+```bash
+python app.py
+```
 
 5. Navigate to the specified local server, likely http://127.0.0.1:8050/ and see the comparison
 
