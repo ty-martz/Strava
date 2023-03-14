@@ -36,7 +36,7 @@ app.layout = html.Div([
     html.Div([
         html.H1('Strava Compare', style={'color':colors[0], 'font-family':'sans-serif', 'display':'inline-block'}),
         html.Div([''], style={'width':'5%', 'display':'inline-block'}),
-        html.A("Github Repo", href='https://github.com/ty-martz/Strava/tree/master/user-analytics', target="_blank", style={'display':'inline-block', 'color':colors[1]})
+        html.A("Github Repo", href='https://github.com/ty-martz/Strava', target="_blank", style={'display':'inline-block', 'color':colors[1]})
     ]),
     ## FILTERS ##
     html.Div([
